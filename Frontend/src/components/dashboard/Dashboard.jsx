@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react'
-import "./Dashboard.css";
 import Navbar from "../ui/Navbar";
 
 export default function Dashboard() {
