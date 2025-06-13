@@ -25,7 +25,7 @@ const signUp = async (req, res) => {
     if(!errors.isEmpty()){
         return res.status(httpStatus.BAD_REQUEST).json({errors: errors.array()});
     }
-    const { username, email, password } = req.body;
+    const { email, password } = req.body;
     try{
         await connectClient();
         const db = client.db("github");
@@ -35,7 +35,6 @@ const signUp = async (req, res) => {
         }
         const hashedPassword = await bcrypt.hash(password, 10);
         const newUser = {
-            username,
             email,
             password: hashedPassword,
             repositories: [],

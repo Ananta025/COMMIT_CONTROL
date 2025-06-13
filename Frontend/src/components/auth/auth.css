@@ -5,8 +5,6 @@ section{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url('/background.png') no-repeat center;
-    background-size: cover;
     /* animation: animate 5s linear infinite; */
     font-family: 'Tektur', sans-serif;
     background-color: #000;
@@ -29,8 +27,6 @@ section{
     justify-content: center;
     align-items: center;
     border: 2px solid rgba(255, 255, 255, 0.5);
-    /* backdrop-filter: blur(15px); */
-    box-shadow: 0 15px 25px rgba(42, 212, 228, 0.5);
 }
 
 

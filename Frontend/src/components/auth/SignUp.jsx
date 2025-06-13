@@ -21,7 +21,6 @@ export default function SignUp() {
         try{
             setLodding(true)
             const result = await axios.post(`${import.meta.env.VITE_SERVER_URL}/user/signup`,{
-                username,
                 email,
                 password
             })
@@ -48,14 +47,6 @@ export default function SignUp() {
             <div className="login-box">
                 <form>
                     <h2>Register</h2>
-                    <div className="input-box">
-                        <span className="icon"><i className="fa-solid fa-user"></i></span>
-                        <input
-                        value={username}
-                        onChange={(e)=>setUsername(e.target.value)}
-                        type='text' required />
-                        <label>Username</label>
-                    </div>
                     <div className="input-box">
                         <span className="icon"><i className="fa-solid fa-envelope"></i></span>
                         <input

@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .navbar{
     height: 100vh;
     overflow-x: hidden;
     position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 .nav-bar{
     position: relative;
@@ -30,7 +32,8 @@
 }
 .left-content .dashboard-heading{
     color: #fff;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+    font-weight: 450;
     padding: 0.4rem 0.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -44,7 +47,7 @@
     padding: 0.4rem 0.5rem;
     color : #9099a1;
     font-size: 1.5rem;
-    border: 2px solid #3d444c;
+    border: 1px solid #3d444c;
     border-radius: 0.5rem;
     cursor: pointer;
 }
@@ -308,7 +311,6 @@ hr{
     position: fixed;
     top: 10vh;
     left: 0;
-    border-right: #3d444c 1px solid;
 }
 
 .right-container{
